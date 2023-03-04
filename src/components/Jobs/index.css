@@ -1,0 +1,106 @@
+.app-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.jobs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-card {
+  border: 1px solid #cbd5e1;
+  margin: 10px;
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.search-input {
+  background-color: black;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  font-size: 18px;
+  padding-left: 20px;
+  border-width: 0px;
+  outline: none;
+  margin: 10px;
+}
+
+.search-icon {
+  background-color: #272727;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.hr-line {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 90%;
+}
+
+.profile-card {
+  height: 170px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-retry-btn {
+  background-color: #4f46e5;
+  color: #ffffff;
+  border-width: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.profile-success-card {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: cover;
+  font-family: 'Roboto';
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.profile-success-avatar {
+  height: 50px;
+}
+.profile-success-name {
+  font-size: 20px;
+  color: #6366f1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.profile-success-bio {
+  color: #272727;
+}
+
+/* Extra Small */
+@media screen and (max-width: 575px) {
+}
+/* Small */
+@media screen and (min-width: 576px) {
+}
+/* Medium */
+@media screen and (min-width: 768px) {
+}
+/* Large */
+@media screen and (min-width: 992px) {
+}
+/* Extra Large */
+@media screen and (min-width: 1200px) {
+}
