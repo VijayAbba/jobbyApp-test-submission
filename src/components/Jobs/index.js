@@ -168,7 +168,7 @@ class Jobs extends Component {
       <h1 className="types-of-employment-heading">Salary Range</h1>
       <ul>
         {salaryRangesList.map(eachItem => (
-          <li className="check-box-card" key={eachItem.salaryRangeIds}>
+          <li className="check-box-card" key={eachItem.label}>
             <input
               id={eachItem.salaryRangeId}
               className=""
@@ -189,7 +189,7 @@ class Jobs extends Component {
       <h1 className="types-of-employment-heading">Type of Employment</h1>
       <ul>
         {employmentTypesList.map(eachItem => (
-          <li className="check-box-card" key={eachItem.employmentTypeId}>
+          <li className="check-box-card" key={eachItem.label}>
             <input
               id={eachItem.employmentTypeId}
               className=""
@@ -227,7 +227,9 @@ class Jobs extends Component {
       <div className="jobs-list-card">
         <ul className="jobs-ul-card">
           {jobsData.map(eachItem => (
-            <JobCard jobDetails={eachItem} key={eachItem.id} />
+            <li className="single-job-item" key={eachItem.id}>
+              <JobCard jobDetails={eachItem} />
+            </li>
           ))}
         </ul>
       </div>
