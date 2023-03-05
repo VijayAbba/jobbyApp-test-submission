@@ -1,0 +1,81 @@
+.jobDetails-card {
+  background-color: black;
+  color: #ffffff;
+}
+
+.job-details-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+}
+
+.job-details-success-container {
+  background-color: #272727;
+  margin: 12px;
+  padding: 12px;
+  font-family: 'Roboto';
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.success-description-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.visit-link {
+  color: #6366f1;
+  text-decoration: none;
+  font-size: 18px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.visit-text {
+  padding-right: 10px;
+}
+
+.skills-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.single-skill-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45%;
+  padding: 10px;
+}
+
+.skill-img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.company-life-img {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.similar-jobs-heading {
+  padding-left: 10px;
+  font-size: 2px;
+}
+
+.similar-jobs-card {
+  width: 100%;
+}

@@ -25,27 +25,36 @@ const Header = props => {
           alt="website logo"
         />
       </Link>
-      <div className="header-card">
-        <Link to="/" className="nav-link">
-          <h1 className="header-heading">Home</h1>
-        </Link>
-        <Link to="/jobs" className="nav-link">
-          <h1 className="header-heading">Jobs</h1>
-        </Link>
-      </div>
+      <ul className="header-card">
+        <li>
+          <Link to="/" className="nav-link">
+            <h1 className="header-heading">Home</h1>
+          </Link>
+        </li>
+        <li>
+          <Link to="/jobs" className="nav-link">
+            <h1 className="header-heading">Jobs</h1>
+          </Link>
+        </li>
+      </ul>
       <button className="logout-btn" type="button" onClick={onLogout}>
         Logout
       </button>
-      <div className="sm-links">
-        <Link to="/" className="nav-link">
-          <AiFillHome size="30" className="icon-styles" />
-        </Link>
-        <Link to="/jobs" className="nav-link">
-          <BsBriefcaseFill size="30" className="icon-styles" />
-        </Link>
-
-        <FiLogOut size="30" className="icon-styles" onClick={onLogout} />
-      </div>
+      <ul className="sm-links">
+        <li>
+          <Link to="/" className="nav-link">
+            <AiFillHome size="30" className="icon-styles" />
+          </Link>
+        </li>
+        <li>
+          <Link to="/jobs" className="nav-link">
+            <BsBriefcaseFill size="30" className="icon-styles" />
+          </Link>
+        </li>
+        <li>
+          <FiLogOut size="30" className="icon-styles" onClick={onLogout} />
+        </li>
+      </ul>
     </nav>
   )
 }

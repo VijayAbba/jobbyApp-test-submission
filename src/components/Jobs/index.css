@@ -1,6 +1,4 @@
 .app-container {
-  height: 100vh;
-  width: 100vw;
   background-color: #000000;
   color: #ffffff;
 }
@@ -87,6 +85,91 @@
 }
 .profile-success-bio {
   color: #272727;
+}
+
+.profile-card-two {
+  height: 150px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+.type-of-employment-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.types-of-employment-heading {
+  font-size: 18px;
+}
+
+.check-box-card {
+  padding-top: 10px;
+}
+
+label {
+  padding-left: 10px;
+}
+
+.jobs-failure-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.failure-view-img {
+  width: 50%;
+}
+
+.jobs-failure-heading {
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.jobs-failure-para {
+}
+
+.failure-retry-btn {
+  background-color: #4f46e5;
+  color: #ffffff;
+  border-width: 0px;
+  padding: 10px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+.no-jobs-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-jobs-img {
+  padding-top: 10px;
+  width: 80%;
+}
+
+.no-jobs-heading {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.jobs-list-card {
+  width: 100%;
+  padding: 10px;
+}
+.jobs-ul-card {
+  margin: 0px;
+
+  width: 100%;
 }
 
 /* Extra Small */

@@ -12,6 +12,11 @@
   color: #ffffff;
   text-decoration: none;
 }
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
 
 .logo-img {
   width: 120px;
@@ -52,6 +57,10 @@
     width: 80px;
   }
   .sm-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
   .icon-styles {
     margin-left: 10px;
