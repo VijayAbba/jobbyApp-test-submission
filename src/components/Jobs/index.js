@@ -55,7 +55,7 @@ const apiStatusConsonents = {
 class Jobs extends Component {
   state = {
     profileStatus: apiStatusConsonents.initial,
-    jobsStatus: apiStatusConsonents.pending,
+    jobsStatus: apiStatusConsonents.initial,
     jobsData: [],
     profileData: {},
     typesOfEmployment: [],
@@ -71,7 +71,6 @@ class Jobs extends Component {
   getJobsDetails = async () => {
     this.setState({jobsStatus: apiStatusConsonents.pending})
     const {typesOfEmployment, salaryRange, searchText} = this.state
-    // console.log(typesOfEmployment)
     const newTypesOfEmployment = typesOfEmployment
     const joinedNewTypesOfEmployment = newTypesOfEmployment.join()
     console.log(joinedNewTypesOfEmployment)
@@ -145,8 +144,6 @@ class Jobs extends Component {
   }
 
   onChangeRadio = event => {
-    // console.log(event.target.value)
-
     this.setState({salaryRange: event.target.value}, this.getJobsDetails)
   }
 
@@ -164,7 +161,6 @@ class Jobs extends Component {
     } else {
       this.setState({typesOfEmployment: newArray}, this.getJobsDetails)
     }
-    this.getJobsDetails()
   }
 
   salaryRangCard = () => (
@@ -238,30 +234,26 @@ class Jobs extends Component {
     )
   }
 
-  jobsListFailure = () => {
-    const {jobsData, typesOfEmployment} = this.state
-
-    return (
-      <div className="jobs-failure-card">
-        <img
-          className="failure-view-img"
-          src="https://assets.ccbp.in/frontend/react-js/failure-img.png"
-          alt="failure view"
-        />
-        <h1 className="jobs-failure-heading">Oops! Something Went Wrong</h1>
-        <p className="jobs-failure-para">
-          We cannot seem to find the page you are looking for.
-        </p>
-        <button
-          className="failure-retry-btn"
-          type="button"
-          onClick={this.getJobsDetails}
-        >
-          Retry
-        </button>
-      </div>
-    )
-  }
+  jobsListFailure = () => (
+    <div className="jobs-failure-card">
+      <img
+        className="failure-view-img"
+        src="https://assets.ccbp.in/frontend/react-js/failure-img.png"
+        alt="failure view"
+      />
+      <h1 className="jobs-failure-heading">Oops! Something Went Wrong</h1>
+      <p className="jobs-failure-para">
+        We cannot seem to find the page you are looking for.
+      </p>
+      <button
+        className="failure-retry-btn"
+        type="button"
+        onClick={this.getJobsDetails}
+      >
+        Retry
+      </button>
+    </div>
+  )
 
   profileCard = () => {
     const {profileData} = this.state
@@ -292,7 +284,6 @@ class Jobs extends Component {
   )
 
   onSearchEnter = event => {
-    // console.log(event.key)
     if (event.key === 'Enter') {
       this.getJobsDetails()
     }
@@ -359,9 +350,6 @@ class Jobs extends Component {
   }
 
   render() {
-    const {typesOfEmployment} = this.state
-
-    // console.log(typesOfEmployment)
     return (
       <div className="app-container">
         <Header />
